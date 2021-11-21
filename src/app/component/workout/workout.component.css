@@ -1,0 +1,23 @@
+.workout h1{
+    text-align: center;
+}
+.radio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 1rem;
+}
+.radio label{
+    width: 100%;
+    height: 200px;
+    font-size: 5rem;
+    border-radius: 20%;
+}
+form{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+.hide{
+    display: none;
+}

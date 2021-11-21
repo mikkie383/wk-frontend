@@ -1,0 +1,13 @@
+.loginImg{
+    text-align: center;
+}
+img{
+    
+    max-width: 700px;
+    
+}
+@media only screen and (max-width: 600px){
+    img{
+        max-width: 95%;
+    }
+}

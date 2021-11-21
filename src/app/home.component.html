@@ -1,0 +1,26 @@
+<!-- {{message}} -->
+<div class="homeContainer">
+    <div class="homeImage">
+        <img src="../assets/street-workout-2628904_1280.jpg" alt="home image">
+    </div>
+    <div class="homeInfo">
+        <div class="signup">
+            <a class="btn btn-info" routerLink="/signup">Sign Up Now</a>
+            <img src="../assets/weight-loss.jpg" alt="weight-loss">
+        </div>
+        <div class="peopleList">
+            <h1>Workout Completed Yesterday</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <ng-container *ngFor="let report of reports">
+                <tr *ngIf="report.reportDetails[0].workoutToday=='Yes'" >
+                    <td>{{report.firstName + " " + report.lastName}}</td>
+                    <!-- <td>{{report.reportDetails[0].workoutToday}}</td> -->
+                </tr>
+                </ng-container>
+            </table>
+        </div>
+    </div>
+</div>

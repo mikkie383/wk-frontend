@@ -1,0 +1,23 @@
+<div *ngIf="!authenticated">
+    <p >Not authenticated!</p>
+</div>
+<div class="workout" *ngIf="authenticated">
+    <h1>Did you workout today?</h1>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group radio">
+            <input type="text" formControlName="userId" [(ngModel)]="userId" class="hide">
+            <input type="radio" formControlName="workoutToday" class="btn-check" name="workoutToday" id="option1" autocomplete="off" value="Yes">
+            <label for="option1" class="btn btn-success">Yes</label>
+
+            <input type="radio" formControlName="workoutToday" class="btn-check" name="workoutToday" id="option2" autocomplete="off" value="No">
+            <label for="option2" class="btn btn-danger">No</label>
+            <!-- <button id="yes" class="btn btn-success btn-lg my-2">Yes</button>
+            <button id="no" class="btn btn-danger btn-lg my-2">No</button> -->
+        </div>
+        <div class="form-group">
+            <label for="reason">If "yes", what did you do? If "no", what would help you to do your daily workout?</label>
+            <textarea formControlName="explanation" class="form-control" id="reason" rows="6" required></textarea>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+    </form>
+</div>

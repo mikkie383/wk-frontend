@@ -1,0 +1,49 @@
+.homeContainer{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.homeImage img{
+    width: 100%;
+}
+.homeInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2%;
+}
+.signup{
+    position: relative;
+    margin-bottom: 1%;
+}
+.signup a{
+    float: left;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    font-size: 150%;
+}
+.signup img{
+    width: 96%;
+}
+.peopleList{
+    background-color: white;
+    padding: 5%;
+    width: 96%;
+}
+.peopleList h1{
+    color: green;
+}
+.peopleList table{
+    margin: 3% auto;
+}
+.peopleList table th{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .homeInfo{
+        display: block;
+    }
+}
