@@ -12,7 +12,8 @@ WORKDIR ${WORK_DIR}
 COPY package*.json ${WORK_DIR}
 
 RUN npm install @angular/cli
-RUN npm install 
+RUN npm install
+RUN npm install --save @angular/material @angular/cdk
 
 COPY . ${WORK_DIR}
 

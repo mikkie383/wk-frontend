@@ -25,10 +25,11 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  //still working on edit button
   editReport(_id: any){
 
   }
-
+  //still working on delete button
   deleteReport(_id: any){
       return this.http.delete('http://localhost:2233/api/report/' + _id).subscribe();
     
